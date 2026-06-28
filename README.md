@@ -1,1 +1,305 @@
 # marketplace-intelligence-platform
+# 🤖 Marketplace Intelligence Platform
+### AI-Powered Executive Analytics Copilot for Marketplace Businesses
+
+[![Python](https://img.shields.io/badge/Python-3.11-blue.svg)]()
+[![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green.svg)]()
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange.svg)]()
+[![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-red.svg)]()
+
+---
+
+# 📌 Overview
+
+Marketplace Intelligence Platform is an end-to-end analytics solution that transforms raw marketplace transaction data into executive-level business insights.
+
+The platform combines **Data Engineering**, **Business Intelligence**, **Machine Learning**, and **Generative AI** to help leadership understand revenue performance, customer behavior, operational efficiency, and customer satisfaction.
+
+An AI-powered Executive Analytics Copilot allows stakeholders to ask natural language business questions and receive evidence-based recommendations grounded in marketplace analytics.
+
+---
+
+# 🎯 Business Problem
+
+Modern marketplace businesses generate thousands of transactions across customers, sellers, products, payments, and deliveries.
+
+Business leaders need answers to questions such as:
+
+- How is revenue changing over time?
+- Which customer segments generate the most value?
+- What operational issues reduce customer satisfaction?
+- Which factors predict poor customer reviews?
+- What actions should leadership prioritize?
+
+This project provides a unified analytics platform capable of answering these questions through both dashboards and an AI-powered assistant.
+
+---
+
+# 🏗️ Project Architecture
+
+```
+Raw Marketplace Data (9 Tables)
+            │
+            ▼
+    Data Engineering
+    • Data Cleaning
+    • Feature Engineering
+    • Fact Table Creation
+            │
+            ▼
+   Business Analytics
+   • Executive KPIs
+   • Revenue Analysis
+   • Customer Analytics
+   • Operations Analytics
+            │
+            ▼
+ Advanced Analytics
+ • RFM Segmentation
+ • Cohort Retention
+ • Customer Insights
+            │
+            ▼
+ Machine Learning
+ • Low Review Prediction
+ • Feature Importance
+            │
+            ▼
+ AI Executive Copilot
+```
+
+---
+
+# 📊 Dataset
+
+The project uses the Brazilian Olist Marketplace Dataset containing:
+
+- Customers
+- Orders
+- Products
+- Sellers
+- Payments
+- Reviews
+- Geolocation
+- Order Items
+- Product Categories
+
+More than **99,000 orders** and **119,000 marketplace records** were integrated into a single analytical data model.
+
+---
+
+# 🚀 Features
+
+## ✅ Data Engineering
+
+- Merged 9 relational datasets
+- Built a unified fact table
+- Feature engineering for marketplace KPIs
+- Missing value handling
+- Business-ready analytical dataset
+
+---
+
+## 📈 Executive Analytics
+
+Generated executive KPIs including:
+
+- Total Revenue
+- Total Orders
+- Average Order Value
+- Customer Count
+- Seller Count
+- Review Score
+- Delivery Performance
+- Late Delivery Rate
+
+---
+
+## 💰 Revenue Analytics
+
+- Monthly Revenue Trends
+- Revenue by Product Category
+- Revenue by State
+- Top Performing Sellers
+
+---
+
+## 👥 Customer Analytics
+
+- Repeat Customer Analysis
+- Customer Performance
+- Customer Segmentation (RFM)
+- Customer Lifetime Insights
+
+---
+
+## 🚚 Operations Analytics
+
+- Delivery Performance
+- Delivery Delay Analysis
+- Payment Analysis
+- Operational KPI Monitoring
+
+---
+
+## 📊 Advanced Analytics
+
+### RFM Segmentation
+
+Customers are segmented into:
+
+- Champions
+- Loyal Customers
+- New Customers
+- At Risk
+- Lost Customers
+- Need Attention
+
+---
+
+### Cohort Analysis
+
+Customer retention trends are analyzed over time to evaluate repeat purchase behavior across acquisition cohorts.
+
+---
+
+# 🤖 Machine Learning
+
+## Business Problem
+
+Predict whether an order is likely to receive a **low customer review (1–2 stars)** using operational and transactional features.
+
+### Model
+
+Random Forest Classifier
+
+### Performance
+
+| Metric | Score |
+|---------|--------|
+| Accuracy | **91%** |
+| ROC-AUC | **0.822** |
+| Precision | **0.83** |
+| Recall | **0.48** |
+
+### Top Predictive Features
+
+| Feature | Importance |
+|---------|-----------:|
+| Delivery Delay | 22.7% |
+| Order Value | 18.0% |
+| Freight Cost | 16.8% |
+| Delivery Days | 16.7% |
+| Payment Installments | 5.4% |
+
+---
+
+# 🤖 AI Executive Copilot
+
+The platform includes an AI-powered Streamlit application that enables executives to ask business questions in natural language.
+
+Example questions include:
+
+- Summarize marketplace performance.
+- Which operational risks require immediate attention?
+- What drives poor customer reviews?
+- Give strategic business recommendations.
+- Which customer segment is most valuable?
+
+The assistant generates evidence-based responses using analytics generated by the platform rather than relying on generic knowledge.
+
+---
+
+# 🛠️ Technology Stack
+
+- Python
+- Pandas
+- NumPy
+- Scikit-Learn
+- Streamlit
+- OpenAI API
+- Git
+- GitHub
+
+---
+
+# 📁 Repository Structure
+
+```
+marketplace-intelligence-platform/
+
+│── data/
+│── notebook/
+│── outputs/
+│── sql/
+│── README.md
+│── requirements.txt
+│── .gitignore
+```
+
+---
+
+# 🚀 How to Run
+
+Clone the repository
+
+```bash
+git clone https://github.com/Rounakladdha8/marketplace-intelligence-platform.git
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Set your OpenAI API key
+
+**Windows PowerShell**
+
+```powershell
+$env:OPENAI_API_KEY="YOUR_API_KEY"
+```
+
+Run the application
+
+```bash
+streamlit run notebook/streamlit_app.py
+```
+
+---
+
+# 💡 Business Insights
+
+The analysis identified several important operational findings:
+
+- Delivery delay is the strongest predictor of poor customer reviews.
+- Freight cost has a measurable impact on customer satisfaction.
+- Customer retention remains low, highlighting opportunities for loyalty initiatives.
+- Operational improvements are likely to have a greater impact on customer experience than geographic differences.
+
+---
+
+# 🔮 Future Improvements
+
+- Interactive Power BI Dashboard
+- SHAP Explainability
+- Cloud Deployment
+- Real-time Data Pipeline
+- Automated Executive Reporting
+- LLM-powered SQL Query Generation
+
+---
+
+# 👨‍💻 Author
+
+**Rounak Laddha**
+
+Master of Data Science  
+Illinois Institute of Technology
+
+GitHub: https://github.com/Rounakladdha8
+
+---
+
+⭐ If you found this project interesting, consider starring the repository!
