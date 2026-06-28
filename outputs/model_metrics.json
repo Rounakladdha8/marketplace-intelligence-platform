@@ -1,0 +1,7 @@
+{
+    "roc_auc": 0.822,
+    "accuracy": 0.91,
+    "precision_low_review": 0.83,
+    "recall_low_review": 0.48,
+    "f1_low_review": 0.61
+}
